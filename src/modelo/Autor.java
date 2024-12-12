@@ -8,7 +8,36 @@ package modelo;
  *
  * @author Dell Core i7
  */
-public class Autor {
-    
-    
-}
+public class Autor extends Persona{
+    //Atributos
+    private int numLibrosPublicados;
+    //Constructores
+
+    public Autor() {
+    }
+
+    public Autor(int numLibrosPublicados) {
+        this.numLibrosPublicados = numLibrosPublicados;
+    }
+    //encapsulamiento
+
+    public int getNumLibrosPublicados() {
+        return numLibrosPublicados;
+    }
+
+    public void setNumLibrosPublicados(int numLibrosPublicados) {
+        this.numLibrosPublicados = numLibrosPublicados;
+    }
+    //REglas de Negocio
+
+    @Override
+    public String toString() {
+        return "\n"+ "LOS DATOS DE LA PERSONA SON:\n"+
+                "Nombre: "+getNombre()+"\n"+
+                "Apellido: "+getApellido()+"\n"+
+                "Dirección: "+getDireccion()+"\n"+
+                "Teléfono: "+getTelefono()+"\n"+      
+                "Fecha de Nacimiento: "+ getFechaNacimiento()+ "\n"+
+                "Cantidad de LIbros Publicados: "+ getNumLibrosPublicados();}
+    }
+   

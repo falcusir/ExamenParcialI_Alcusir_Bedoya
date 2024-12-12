@@ -4,6 +4,7 @@
  */
 package vista;
 
+import modelo.Autor;
 import modelo.Persona;
 
 /**
@@ -17,6 +18,10 @@ public class Main {
         Persona p1= new Persona();
         p1.setApellido("Alcusir");
         System.out.println(p1.toString());
+        
+        Autor a1 = new Autor();
+        a1.setNumLibrosPublicados(3);
+        System.out.println(a1.toString());
     }
   
     

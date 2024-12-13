@@ -57,12 +57,12 @@ public class LibroForm extends javax.swing.JFrame {
         txtIsbn = new javax.swing.JTextField();
         txtPublicacion = new javax.swing.JTextField();
         txtGenero = new javax.swing.JTextField();
-        txtEstado = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtAGuardar = new javax.swing.JTextArea();
         btnLimpiar = new javax.swing.JButton();
         btnGuardar = new javax.swing.JButton();
+        lblDisponible2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -131,6 +131,8 @@ public class LibroForm extends javax.swing.JFrame {
             }
         });
 
+        lblDisponible2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -163,9 +165,9 @@ public class LibroForm extends javax.swing.JFrame {
                                     .addComponent(lblDireccion1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(lblTelefono1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtGenero)
-                                    .addComponent(txtEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblDisponible2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -227,8 +229,8 @@ public class LibroForm extends javax.swing.JFrame {
                             .addComponent(lblDireccion1))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblTelefono1))))
+                            .addComponent(lblTelefono1)
+                            .addComponent(lblDisponible2))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblApellido1)
@@ -282,7 +284,6 @@ public class LibroForm extends javax.swing.JFrame {
         txtIsbn.setText("");
         txtPublicacion.setText("");
         txtGenero.setText("");
-        txtEstado.setText("");
         txtCedula.setText("");
         txtNombre.setText("");
         txtApellido.setText("");
@@ -306,11 +307,12 @@ public class LibroForm extends javax.swing.JFrame {
         lib1.setIsbn(txtIsbn.getText());
         lib1.setFechaPublicacion(Integer.parseInt(txtPublicacion.getText()));
         lib1.setGenero(txtGenero.getText());
+        lib1.setAutor(a1);
         
 //       
       
         txtAGuardar.setText(lib1.toString());
-        txtAGuardar.append(a1.toString());
+        lblDisponible2.setText("Disponible");
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     /**
@@ -361,6 +363,7 @@ public class LibroForm extends javax.swing.JFrame {
     private javax.swing.JLabel lblCedula1;
     private javax.swing.JLabel lblDireccion;
     private javax.swing.JLabel lblDireccion1;
+    private javax.swing.JLabel lblDisponible2;
     private javax.swing.JLabel lblFechaN;
     private javax.swing.JLabel lblFechaN1;
     private javax.swing.JLabel lblNombre;
@@ -371,7 +374,6 @@ public class LibroForm extends javax.swing.JFrame {
     private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtCedula;
     private javax.swing.JTextField txtDirección;
-    private javax.swing.JTextField txtEstado;
     private javax.swing.JTextField txtFechNacimiento;
     private javax.swing.JTextField txtGenero;
     private javax.swing.JTextField txtIsbn;

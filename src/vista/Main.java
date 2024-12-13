@@ -27,7 +27,7 @@ public class Main {
         a1.setNumLibrosPublicados(3);
         System.out.println(a1.toString());
         
-        Libro l1 = new Libro("100 aAños de Soledad", "ABC1", 2011, "Drama", a1, true);
+        Libro l1 = new Libro("100 aAños de Soledad", "ABC1", 2011, "Drama", a1, false);
         System.out.println(l1.toString());
         
         

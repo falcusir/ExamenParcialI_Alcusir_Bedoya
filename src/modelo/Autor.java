@@ -32,7 +32,7 @@ public class Autor extends Persona{
 
     @Override
     public String toString() {
-        return "\n"+ "LOS DATOS DE LA AUTOR SON:\n"+
+        return  "LOS DATOS DEL AUTOR SON:\n"+
                 "Cédula: "+getCedula()+"\n"+
                 "Nombre: "+getNombre()+"\n"+
                 "Apellido: "+getApellido()+"\n"+

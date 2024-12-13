@@ -97,8 +97,8 @@ public class Libro implements Prestamo {
                 "Código isbn: "+getIsbn()+"\n"+
                 "Año de Publicación: "+getFechaPublicacion()+"\n"+
                 "Género del libro: "+getGenero()+"\n"+
-                "Autor: "+getAutor()+"\n"+
-                "Estado del libro: "+(getEstado() ? "Disponible" : "No Disponible")+"\n";           
+                "Estado del libro: "+(getEstado() ? "Disponible" : "No Disponible")+"\n"+
+                "\n"+getAutor()+"\n";
     }
 
 

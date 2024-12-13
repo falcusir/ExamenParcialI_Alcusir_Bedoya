@@ -17,7 +17,7 @@ public class Main {
         
         Persona p1= new Persona();
         p1.setApellido("Alcusir");
-        System.out.println(p1.toString());
+        //System.out.println(p1.toString());
         
         Autor a1 = new Autor();
         a1.setNumLibrosPublicados(3);

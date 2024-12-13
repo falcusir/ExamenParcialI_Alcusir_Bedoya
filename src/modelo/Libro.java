@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author Carlos
  */
-public class Libro {
+public class Libro implements Prestamo {
     private String titulo;
     private String isbn;
     private Date fechaPublicacion;
@@ -84,7 +84,12 @@ public class Libro {
     }
     
     //REGLAS DE NEGOCIO
-
+    
+    @Override
+    public boolean disponibilidad() {
+        return estado;
+    }
+    
     @Override
     public String toString() {
         return "DATOS DEL LIBRO: "+"\n"+
@@ -93,8 +98,7 @@ public class Libro {
                 "Fecha de Publicación: "+getFechaPublicacion()+"\n"+
                 "Género del libro: "+getGenero()+"\n"+
                 "Autor: "+getAutor()+"\n"+
-                "Estado del libro: "+"\n"+(getEstado() ? "Si" : "No")+"\n";           
+                "Estado del libro: "+(getEstado() ? "Disponible" : "No Disponible")+"\n";           
     }
-    
-    
+
 }

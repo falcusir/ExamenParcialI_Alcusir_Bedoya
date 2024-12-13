@@ -22,6 +22,8 @@ public class Main {
         Autor a1 = new Autor();
         a1.setNumLibrosPublicados(3);
         System.out.println(a1.toString());
+        
+        
     }
   
     

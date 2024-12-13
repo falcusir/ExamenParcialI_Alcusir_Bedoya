@@ -4,7 +4,11 @@
  */
 package vista;
 
+import java.text.DateFormat;
+import java.time.LocalDate;
+import java.util.Date;
 import modelo.Autor;
+import modelo.Libro;
 import modelo.Persona;
 
 /**
@@ -17,11 +21,14 @@ public class Main {
         
         Persona p1= new Persona();
         p1.setApellido("Alcusir");
-        //System.out.println(p1.toString());
+        System.out.println(p1.toString());
         
         Autor a1 = new Autor();
         a1.setNumLibrosPublicados(3);
         System.out.println(a1.toString());
+        
+        Libro l1 = new Libro("100 aAños de Soledad", "ABC1", 2011, "Drama", a1, true);
+        System.out.println(l1.toString());
         
         
     }

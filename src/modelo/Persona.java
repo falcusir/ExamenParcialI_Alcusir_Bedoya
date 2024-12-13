@@ -12,19 +12,19 @@ import java.util.Date;
  */
 public class Persona {
     //ATRIBUTOS
-    private int cedula;
+    private String cedula;
     private String nombre;
     private String apellido;
     private String direccion;
     private String telefono;
-    private Date fechaNacimiento;
+    private String fechaNacimiento;
     
     //METODOS CONSTRUCTORES
 
     public Persona() {
     }
 
-    public Persona(int cedula, String nombre, String apellido, String direccion, String telefono, Date fechaNacimiento) {
+    public Persona(String cedula, String nombre, String apellido, String direccion, String telefono, String fechaNacimiento) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -35,11 +35,11 @@ public class Persona {
     
     //ENCAPSULAMIENTO
 
-    public int getCedula() {
+    public String getCedula() {
         return cedula;
     }
 
-    public void setCedula(int cedula) {
+    public void setCedula(String cedula) {
         this.cedula = cedula;
     }
 
@@ -75,11 +75,11 @@ public class Persona {
         this.telefono = telefono;
     }
 
-    public Date getFechaNacimiento() {
+    public String getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
+    public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
     

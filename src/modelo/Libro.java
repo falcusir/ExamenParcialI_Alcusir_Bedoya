@@ -13,7 +13,7 @@ import java.util.Date;
 public class Libro implements Prestamo {
     private String titulo;
     private String isbn;
-    private Date fechaPublicacion;
+    private int fechaPublicacion;
     private String genero;
     private Autor autor;
     private boolean estado;
@@ -24,7 +24,7 @@ public class Libro implements Prestamo {
         this.estado = true;
     }
     
-    public Libro(String titulo, String isbn, Date fechaPublicacion, String genero, Autor autor, boolean estado) {
+    public Libro(String titulo, String isbn, int fechaPublicacion, String genero, Autor autor, boolean estado) {
         this.titulo = titulo;
         this.isbn = isbn;
         this.fechaPublicacion = fechaPublicacion;
@@ -51,11 +51,11 @@ public class Libro implements Prestamo {
         this.isbn = isbn;
     }
 
-    public Date getFechaPublicacion() {
+    public int getFechaPublicacion() {
         return fechaPublicacion;
     }
 
-    public void setFechaPublicacion(Date fechaPublicacion) {
+    public void setFechaPublicacion(int fechaPublicacion) {
         this.fechaPublicacion = fechaPublicacion;
     }
 
@@ -95,10 +95,12 @@ public class Libro implements Prestamo {
         return "DATOS DEL LIBRO: "+"\n"+
                 "Título del libro: "+getTitulo()+"\n"+
                 "Código isbn: "+getIsbn()+"\n"+
-                "Fecha de Publicación: "+getFechaPublicacion()+"\n"+
+                "Año de Publicación: "+getFechaPublicacion()+"\n"+
                 "Género del libro: "+getGenero()+"\n"+
                 "Autor: "+getAutor()+"\n"+
                 "Estado del libro: "+(getEstado() ? "Disponible" : "No Disponible")+"\n";           
     }
+
+
 
 }

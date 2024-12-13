@@ -3,9 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/jeanc/OneDrive/Documentos/MATERIA%20BASE%20DE%20DATOS%20IST%2017%20DE%20JULIO/Programacion%20Orientada%20a%20Objetos/NetBeansProjects/ExamenParcialI_Alcusir_Bedoya/src/modelo/Libro.java</file>
             <file>file:/C:/Users/jeanc/OneDrive/Documentos/MATERIA%20BASE%20DE%20DATOS%20IST%2017%20DE%20JULIO/Programacion%20Orientada%20a%20Objetos/NetBeansProjects/ExamenParcialI_Alcusir_Bedoya/src/vista/Main.java</file>
             <file>file:/C:/Users/jeanc/OneDrive/Documentos/MATERIA%20BASE%20DE%20DATOS%20IST%2017%20DE%20JULIO/Programacion%20Orientada%20a%20Objetos/NetBeansProjects/ExamenParcialI_Alcusir_Bedoya/src/modelo/Prestamo.java</file>
+=======
+            <file>file:/C:/Users/Dell%20Core%20i7/Documents/17%20de%20JULIO_DESARROLLO%20DE%20SOFTWARE/2%20SEMESTRE/POO/PROYECTOS/ExamenParcialI_Alcusir_Bedoya/src/modelo/Persona.java</file>
+            <file>file:/C:/Users/Dell%20Core%20i7/Documents/17%20de%20JULIO_DESARROLLO%20DE%20SOFTWARE/2%20SEMESTRE/POO/PROYECTOS/ExamenParcialI_Alcusir_Bedoya/src/vista/PersonaForm.java</file>
+            <file>file:/C:/Users/Dell%20Core%20i7/Documents/17%20de%20JULIO_DESARROLLO%20DE%20SOFTWARE/2%20SEMESTRE/POO/PROYECTOS/ExamenParcialI_Alcusir_Bedoya/src/vista/Main.java</file>
+            <file>file:/C:/Users/Dell%20Core%20i7/Documents/17%20de%20JULIO_DESARROLLO%20DE%20SOFTWARE/2%20SEMESTRE/POO/PROYECTOS/ExamenParcialI_Alcusir_Bedoya/src/modelo/Autor.java</file>
+            <file>file:/C:/Users/Dell%20Core%20i7/Documents/17%20de%20JULIO_DESARROLLO%20DE%20SOFTWARE/2%20SEMESTRE/POO/PROYECTOS/ExamenParcialI_Alcusir_Bedoya/src/vista/AutorForm.java</file>
+>>>>>>> Alcusir_branch
         </group>
     </open-files>
 </project-private>
